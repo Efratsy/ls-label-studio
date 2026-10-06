@@ -2,6 +2,8 @@
 
 ## 7.1 Structure
 
+The complete source code is in this repository (`src/`, `gui/`, `linux/`, `windows/`) under the GNU GPL v3.
+
 | Part | Language | Role |
 |---|---|---|
 | `ls64` | C (no dependencies beyond libc; libpng and zlib on Linux) | drive control, image → tracks, burning, table setup |

@@ -92,9 +92,31 @@ cross-platform port and measured results.
 > **AI assistance:** This project was developed with the assistance of an AI model
 > (Claude, Anthropic). All results were verified on real hardware.
 
+## Building from source
+
+```bash
+# Linux: ls64 (needs gcc, libpng, zlib); 'make dynamisch' links against the system libraries
+make -C src dynamisch
+bash linux/install.sh /path/to/lightscribe-1.18.27.10-linux-2.6-intel.deb
+```
+Windows: run `windows\build_windows.bat` (needs Python 3.10+; it fetches PyQt6, PyInstaller and the
+Zig C compiler via pip and produces `dist\LS-Label-Studio.exe`).
+
+| Folder | Content |
+|---|---|
+| `src/` | `ls64` (C): drive access (`plattform.c`), image → tracks and halftoning (`spuren.c`, `bild.c`), burning (`brennen.c`), table setup (`daten.c`) |
+| `gui/` | LS Label Studio (Python + Qt) |
+| `linux/`, `windows/` | install and build scripts |
+| `docs/` | technical report |
+
+Contributions are welcome, especially reports from **other LightScribe drives**: the output of
+`ls64 info` and a photo of a burned label help a lot.
+
+**Please never add files, tables or binaries from the LightScribe System Software to this repository.**
+
 ## License and notices
 
-- **Program:** freeware. Free to use, no warranty. See [LICENSE.md](LICENSE.md).
+- **Program and source code:** [GNU General Public License v3.0 or later](LICENSE).
 - **Documentation and images in `docs/`:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - *LightScribe* is a trademark of HP Development Company, L.P. This project is independent and not
   affiliated with or endorsed by HP. See [NOTICE.md](NOTICE.md).

@@ -90,9 +90,21 @@ dokumentiert (englisch): [docs/](docs/README.md).
 > **KI-Unterstützung:** Dieses Projekt wurde mit Unterstützung eines KI-Modells (Claude, Anthropic)
 > entwickelt. Alle Ergebnisse wurden an echter Hardware überprüft.
 
+## Aus dem Quellcode bauen
+
+```bash
+make -C src dynamisch      # Linux: ls64 (gcc, libpng, zlib)
+bash linux/install.sh /pfad/zu/lightscribe-1.18.27.10-linux-2.6-intel.deb
+```
+Windows: `windows\build_windows.bat` ausführen (Python 3.10+ nötig; erzeugt `dist\LS-Label-Studio.exe`).
+
+Beiträge sind willkommen, besonders Rückmeldungen zu **anderen LightScribe-Laufwerken**
+(Ausgabe von `ls64 info` und ein Foto). **Bitte niemals Dateien, Tabellen oder Programme der
+LightScribe System Software in dieses Repository legen.**
+
 ## Lizenz und Hinweise
 
-- **Programm:** Freeware, kostenlos nutzbar, ohne Gewähr. Siehe [LICENSE.md](LICENSE.md).
+- **Programm und Quellcode:** [GNU General Public License v3.0 oder neuer](LICENSE).
 - **Dokumentation und Bilder in `docs/`:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de).
 - *LightScribe* ist eine Marke von HP Development Company, L.P. Dieses Projekt ist unabhängig und
   nicht mit HP verbunden. Siehe [NOTICE.md](NOTICE.md).

@@ -1,3 +1,18 @@
-*.lsp
+# never commit HP software or data
 *.bin
+*.deb
+*.dll
+*.lsd
+*.lsp
+*.rpm
+*.spec
 __pycache__/
+bin/
+build/
+dist/
+drf_tabelle.h
+hp_tabellen.h
+liblightscribe*
+python313/
+src/*.o
+src/ls64

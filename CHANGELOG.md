@@ -1,5 +1,10 @@
 # Changelog
 
+## Source release – 2026-10-06
+- Complete source code published under the **GNU GPL v3.0 or later** (previously freeware binaries).
+- Removed the internal development command `hp-import`. Comments were cleaned up and halftoning
+  identifiers renamed. The output is unchanged and bit-identical.
+
 ## 1.1 – 2026-10-05
 - **Windows 10/11 (64-bit) support:** drive access via SCSI pass-through, single-file `.exe`.
 - One-time setup reads the drive and halftone tables from the user's own LightScribe System Software
